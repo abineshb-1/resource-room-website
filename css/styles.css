@@ -756,6 +756,17 @@ p {
   flex-shrink: 0;
 }
 
+/* Real founder photo — circular (home page) */
+.photo-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--green-leaf);
+  flex-shrink: 0;
+}
+
 .founder-name {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 500;
@@ -899,6 +910,16 @@ p {
   color: var(--teal-deep);
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
+}
+
+/* Real founder photo — square with rounded corners (about page) */
+.founder-photo {
+  width: 200px;
+  height: 240px;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 .founder-bio h3 {
