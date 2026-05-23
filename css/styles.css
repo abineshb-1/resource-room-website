@@ -245,7 +245,7 @@ p {
 .nav-logo-wordmark {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 32px;
   line-height: 1;
   letter-spacing: -0.01em;
 }
@@ -1999,4 +1999,70 @@ p {
   color: var(--text-muted);
   line-height: 1.75;
   margin: 0;
+}
+
+/* =============================================
+   ABOUT — DARK STAT ROW VARIANT
+   ============================================= */
+
+.stat-row-dark .stat-number {
+  color: var(--white-warm);
+}
+
+.stat-row-dark .stat-label {
+  color: rgba(247, 244, 239, 0.55);
+}
+
+.stat-row-dark .stat-divider {
+  background: rgba(247, 244, 239, 0.15);
+}
+
+/* =============================================
+   ABOUT — FOUNDER EXTRAS
+   ============================================= */
+
+.founder-question {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--teal-deep);
+  line-height: 1.65;
+  margin-top: 8px !important;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-light);
+}
+
+/* =============================================
+   ABOUT — TOGETHER SECTION TEXT
+   ============================================= */
+
+.together-hook {
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: rgba(247, 244, 239, 0.6);
+  margin-bottom: 0;
+}
+
+.together-closing {
+  text-align: center;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 22px;
+  color: rgba(247, 244, 239, 0.85);
+  line-height: 1.75;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+@media (max-width: 639px) {
+  .together-closing {
+    font-size: 18px;
+  }
+  .stat-row-dark .stat-number {
+    font-size: 36px;
+  }
 }
