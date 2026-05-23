@@ -2103,3 +2103,59 @@ p {
     font-size: 36px;
   }
 }
+
+/* =============================================
+   CONTENT PHOTOS — INLINE IMAGE BLOCKS
+   ============================================= */
+
+/* Below-text photo block */
+.content-photo-wrap {
+  margin-top: 44px;
+}
+
+.content-photo {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  max-height: 360px;
+}
+
+/* Wide photo inside a full-width container section */
+.section-photo-banner {
+  margin-bottom: 48px;
+}
+
+.section-photo-banner img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  max-height: 420px;
+}
+
+/* Small inset photo inside a flow step */
+.flow-step-photo {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 220px;
+  margin-top: 14px;
+}
+
+@media (max-width: 639px) {
+  .content-photo {
+    max-height: 240px;
+    border-radius: 12px;
+  }
+  .section-photo-banner img {
+    max-height: 240px;
+    border-radius: 12px;
+  }
+  .flow-step-photo {
+    max-height: 180px;
+  }
+}
