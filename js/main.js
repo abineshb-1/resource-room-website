@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
         message ? '\nMessage:\n'     + message : null,
       ].filter(Boolean).join('\n');
 
-      const waURL = 'https://wa.me/919900085178?text=' + encodeURIComponent(lines);
+      const waURL = 'https://wa.me/919900085179?text=' + encodeURIComponent(lines);
       window.open(waURL, '_blank');
     });
   }
