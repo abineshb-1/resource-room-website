@@ -55,4 +55,34 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  /* ---- Contact form → WhatsApp ---- */
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name    = (document.getElementById('name')?.value    || '').trim();
+      const age     = (document.getElementById('child-age')?.value || '').trim();
+      const phone   = (document.getElementById('phone')?.value   || '').trim();
+      const message = (document.getElementById('message')?.value || '').trim();
+
+      if (!name && !phone && !message) {
+        alert('Please fill in at least your name and a message before sending.');
+        return;
+      }
+
+      const lines = [
+        'New enquiry from the Learnnest website',
+        '',
+        name    ? 'Name: '           + name    : null,
+        age     ? "Child's age: "    + age     : null,
+        phone   ? 'Contact number: ' + phone   : null,
+        message ? '\nMessage:\n'     + message : null,
+      ].filter(Boolean).join('\n');
+
+      const waURL = 'https://wa.me/919900085178?text=' + encodeURIComponent(lines);
+      window.open(waURL, '_blank');
+    });
+  }
+
 });
