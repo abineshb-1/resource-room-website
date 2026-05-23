@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Learnnest · Early Learning Support · Bengaluru</title>
+  <meta name="description" content="Reach out to Learnnest. A conversation is enough to begin. We respond within 24 hours.">
+  <meta property="og:title" content="Contact — Learnnest">
+  <meta property="og:description" content="Let's start with your child. A conversation is enough to begin.">
+  <meta name="theme-color" content="#1A3A4A">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Learnnest home">
+        <span class="nav-logo-wordmark"><span class="learn">learn</span><span class="nest">nest</span></span>
+        <span class="nav-logo-tagline">Early Learning Support</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="contact.html" class="btn-primary">Talk to us →</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" id="nav-overlay" role="dialog" aria-label="Navigation menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="program.html">Program</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn-primary nav-overlay-cta">Talk to us →</a>
+  </div>
+
+
+  <!-- ===================== HERO ===================== -->
+  <section class="contact-hero section-warm" aria-labelledby="contact-hero-heading">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-headline" id="contact-hero-heading">Let's start with your child.</h1>
+        <p class="hero-subline">
+          You don't need to have all the answers before you reach out.
+          A conversation is enough to begin.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== OPENING + FORM ===================== -->
+  <section class="section-pad section-white" aria-labelledby="form-heading">
+    <div class="container">
+      <div class="contact-main">
+
+        <div class="contact-left">
+          <p class="reveal">
+            If you have been noticing something — in how your child approaches
+            letters, numbers, reading or expression — and you are not sure
+            what it means or where to turn, this is the right place to start.
+          </p>
+          <p class="reveal">
+            Early intervention begins with a conversation. Tell us about your
+            child and we will take it from there.
+          </p>
+        </div>
+
+        <div class="reveal">
+          <!-- Replace YOUR_FORM_ID with your Formspree form ID: https://formspree.io -->
+          <form class="contact-form" action="#" method="POST" id="contact-form" aria-labelledby="form-heading">
+            <h2 id="form-heading" style="display:none">Contact form</h2>
+
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                autocomplete="name"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="child-age">Your child's age</label>
+              <input
+                type="text"
+                id="child-age"
+                name="child_age"
+                placeholder="e.g. 5 years"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Your contact number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Your WhatsApp or phone number"
+                autocomplete="tel"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell us about your child</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="What have you been noticing? There are no right or wrong answers here — just tell us what you see."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary btn-full">
+              Send — we will be in touch within 24 hours →
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== OTHER WAYS ===================== -->
+  <section class="section-pad section-pale" aria-labelledby="other-ways-heading">
+    <div class="container">
+      <h2 id="other-ways-heading" class="reveal" style="margin-bottom: 48px;">Other ways to reach us.</h2>
+      <div class="other-ways">
+
+        <div class="contact-method reveal">
+          <h4>WhatsApp</h4>
+          <!-- Replace with actual WhatsApp number -->
+          <a href="https://wa.me/91XXXXXXXXXX">Message us directly</a>
+          <p>+91 XXXXX XXXXX</p>
+        </div>
+
+        <div class="contact-method reveal">
+          <h4>Email</h4>
+          <!-- Replace with actual email -->
+          <a href="mailto:hello@learnnest.in">hello@learnnest.in</a>
+        </div>
+
+        <div class="contact-method reveal">
+          <h4>Location</h4>
+          <p>Koorooma Foundation Years<br>
+          Vajrahalli · Bengaluru, Karnataka</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== WHAT TO EXPECT ===================== -->
+  <section class="section-pad section-white expect-section" aria-labelledby="expect-heading">
+    <div class="container">
+      <h2 id="expect-heading" class="reveal">What to expect.</h2>
+
+      <div class="steps-grid">
+
+        <div class="step-item reveal">
+          <div class="step-number" aria-hidden="true">01</div>
+          <h4>We respond within 24 hours</h4>
+          <p>A warm message or call — not a form response. A real person
+          who has read what you shared about your child.</p>
+        </div>
+
+        <div class="step-item reveal">
+          <div class="step-number" aria-hidden="true">02</div>
+          <h4>We have a conversation</h4>
+          <p>15 to 20 minutes. We ask about your child — what you notice
+          at home, what feels hard, what lights them up. You ask us
+          whatever you need to. No pressure, no commitment.</p>
+        </div>
+
+        <div class="step-item reveal">
+          <div class="step-number" aria-hidden="true">03</div>
+          <h4>We suggest a way forward</h4>
+          <p>Based on that conversation we tell you honestly whether
+          Learnnest is the right fit — and if it is, what the
+          next step looks like.</p>
+        </div>
+
+      </div>
+
+      <p class="expect-closing reveal">
+        You know your child best. We bring the specialist knowledge.
+        Together we find the right path.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ===================== QUIET REASSURANCE ===================== -->
+  <section class="section-pad-lg section-dark reassurance-section" aria-label="Reassurance">
+    <div class="container">
+      <blockquote class="reassurance-quote reveal">
+        Reaching out does not mean something is wrong with your child.<br>
+        It means you are paying attention.<br>
+        And paying attention early is the most powerful thing a parent can do.
+      </blockquote>
+    </div>
+  </section>
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo-wordmark"><span class="learn">learn</span><span class="nest">nest</span></div>
+        <div class="footer-tagline">Early Learning Support</div>
+        <div class="footer-location">
+          Bengaluru, Karnataka<br>
+          At Koorooma Foundation Years, Vajrahalli
+        </div>
+      </div>
+      <div class="footer-contact">
+        <div class="footer-contact-label">Get in touch</div>
+        <a href="mailto:hello@learnnest.in">hello@learnnest.in</a>
+        <a href="https://wa.me/91XXXXXXXXXX">WhatsApp us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Learnnest · All rights reserved
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
