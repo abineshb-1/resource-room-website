@@ -1683,3 +1683,320 @@ p {
     padding: 16px 20px;
   }
 }
+
+/* =============================================
+   PROGRAM INFOGRAPHICS — HOOK LINE
+   ============================================= */
+
+.hook-line {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--slate-deep);
+  line-height: 1.7;
+}
+
+@media (max-width: 639px) {
+  .hook-line {
+    font-size: 18px;
+  }
+}
+
+/* =============================================
+   PROGRAM INFOGRAPHICS — STAT ROW
+   ============================================= */
+
+.stat-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-number {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
+  font-size: 52px;
+  color: var(--slate-deep);
+  line-height: 1;
+}
+
+.stat-label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+.stat-divider {
+  display: none;
+  width: 1px;
+  height: 56px;
+  background: var(--border-light);
+  flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+  .stat-row {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .stat-item {
+    padding: 0 48px;
+  }
+
+  .stat-divider {
+    display: block;
+  }
+}
+
+/* =============================================
+   PROGRAM INFOGRAPHICS — STAGE CARDS
+   ============================================= */
+
+.stage-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 1024px) {
+  .stage-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+.stage-info-card {
+  background: var(--white-pure);
+  border-radius: 8px;
+  padding: 28px 24px;
+  box-shadow: 0 2px 12px rgba(26, 58, 74, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-top: 3px solid var(--green-leaf);
+}
+
+.age-badge {
+  display: inline-flex;
+  align-items: center;
+  background: var(--teal-pale);
+  color: var(--teal-deep);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  padding: 4px 12px;
+  border-radius: 100px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.stage-num-label {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--green-leaf);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.stage-info-card h3 {
+  font-size: 22px;
+  color: var(--slate-deep);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.stage-tagline {
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Skill tag pills */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.skill-tag {
+  display: inline-block;
+  background: var(--teal-pale);
+  color: var(--teal-deep);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 4px 11px;
+  border-radius: 100px;
+  border: 1px solid rgba(42, 107, 124, 0.15);
+  line-height: 1.4;
+}
+
+.who-for-block {
+  padding-top: 14px;
+  border-top: 1px solid var(--border-light);
+  margin-top: 2px;
+}
+
+.who-for-label {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--green-leaf);
+  margin-bottom: 5px;
+}
+
+.who-for-block p {
+  font-weight: 300;
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.stages-note {
+  text-align: center;
+  font-style: italic;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: var(--text-base);
+  color: var(--text-muted);
+  margin-top: 40px;
+}
+
+/* =============================================
+   PROGRAM INFOGRAPHICS — APPROACH COMPACT
+   ============================================= */
+
+.approach-compact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .approach-compact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+  }
+}
+
+.approach-compact-item {
+  padding: 28px 32px;
+  border-left: 4px solid var(--green-leaf);
+  background: var(--white-pure);
+  margin: 2px;
+}
+
+.approach-compact-item h4 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--slate-deep);
+  margin-bottom: 8px;
+}
+
+.approach-compact-item p {
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--text-body);
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* =============================================
+   PROGRAM INFOGRAPHICS — SESSION FLOW
+   ============================================= */
+
+.session-flow {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.flow-step {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.flow-step-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flow-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--green-leaf);
+  color: var(--white-pure);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.flow-line {
+  width: 2px;
+  flex: 1;
+  min-height: 32px;
+  background: var(--border-light);
+  margin: 6px 0 0;
+}
+
+.flow-body {
+  padding-bottom: 28px;
+  padding-top: 7px;
+}
+
+.flow-step:last-child .flow-body {
+  padding-bottom: 0;
+}
+
+.flow-body h4 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--slate-deep);
+  margin-bottom: 5px;
+}
+
+.flow-body p {
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin: 0;
+}
