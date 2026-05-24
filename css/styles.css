@@ -1,19 +1,21 @@
 /* =============================================
-   LEARNNEST — SHARED STYLES
+   RESOURCE ROOM — SHARED STYLES
    ============================================= */
 
 /* Google Fonts imported in HTML head */
 
 :root {
-  --slate-deep: #1A3A4A;
-  --green-leaf: #4CAF8C;
-  --teal-deep: #2A6B7C;
-  --teal-pale: #EAF4F4;
-  --white-warm: #F7F4EF;
-  --white-pure: #FFFFFF;
-  --text-body: #2C3E35;
-  --text-muted: #6B7C74;
-  --border-light: #DDE8E5;
+  --slate-deep:   #1A3A4A;   /* primary dark — headings, nav, dark sections */
+  --green-leaf:   #C07B3A;   /* amber — CTA buttons, "Room" accent, highlights */
+  --teal-deep:    #5A8A5A;   /* sage — links, secondary accents */
+  --teal-pale:    #EAF3DE;   /* sage tint — tag backgrounds */
+  --linen:        #E8DFD0;   /* linen — door arch fill, warm surface */
+  --amber-tint:   #FAEEDA;   /* amber light surface */
+  --white-warm:   #F7F3EC;   /* cream — page background */
+  --white-pure:   #FFFFFF;
+  --text-body:    #1A3A4A;
+  --text-muted:   #888780;   /* stone — captions, muted text */
+  --border-light: #D3D1C7;   /* pebble — borders, dividers */
 
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -44,7 +46,7 @@ html {
 body {
   background-color: var(--white-warm);
   color: var(--text-body);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: var(--text-base);
   line-height: 1.7;
@@ -86,7 +88,7 @@ a:hover {
    ============================================= */
 
 h1, h2, h3, h4 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Lora', Georgia, serif;
   font-weight: 500;
   color: var(--slate-deep);
   line-height: 1.2;
@@ -110,7 +112,7 @@ p {
   display: inline-block;
   background: var(--green-leaf);
   color: var(--white-pure);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
   padding: 14px 28px;
@@ -139,7 +141,7 @@ p {
 }
 
 .section-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 12px;
   letter-spacing: 0.12em;
@@ -215,36 +217,21 @@ p {
 .hero-subline  { animation: fadeUp 0.6s ease 0.5s forwards; opacity: 0; }
 .hero-cta      { animation: fadeUp 0.6s ease 0.65s forwards; opacity: 0; }
 
-/* ---- Hero logo ---- */
+/* ---- Hero logo (SVG image) ---- */
 .hero-logo {
   margin-bottom: 40px;
 }
 
-.hero-logo-wordmark {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-weight: 500;
-  font-size: 88px;
-  line-height: 1;
-  letter-spacing: -0.02em;
-}
-
-.hero-logo-wordmark .learn { color: var(--slate-deep); }
-.hero-logo-wordmark .nest  { color: var(--green-leaf); }
-
-.hero-logo-tagline {
+.hero-logo-img {
   display: block;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-top: 10px;
+  width: 320px;
+  height: auto;
+  max-width: 100%;
 }
 
 @media (max-width: 639px) {
-  .hero-logo-wordmark {
-    font-size: 64px !important;
+  .hero-logo-img {
+    width: 220px;
   }
   .hero-logo {
     margin-bottom: 28px;
@@ -280,18 +267,18 @@ p {
 }
 
 .nav-logo-wordmark {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Lora', Georgia, serif;
   font-weight: 500;
   font-size: 40px;
   line-height: 1;
   letter-spacing: -0.01em;
 }
 
-.nav-logo-wordmark .learn { color: var(--slate-deep); }
-.nav-logo-wordmark .nest  { color: var(--green-leaf); }
+.nav-logo-wordmark .resource { color: var(--white-warm); }
+.nav-logo-wordmark .room     { color: var(--green-leaf); }
 
 .nav-logo-tagline {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 9px;
   letter-spacing: 0.14em;
@@ -307,7 +294,7 @@ p {
 }
 
 .nav-links a {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 15px;
   color: var(--slate-deep);
@@ -376,7 +363,7 @@ p {
 }
 
 .nav-overlay a {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Lora', Georgia, serif;
   font-weight: 500;
   font-size: 32px;
   color: var(--slate-deep);
@@ -423,17 +410,17 @@ p {
 }
 
 .footer-logo-wordmark {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Lora', Georgia, serif;
   font-weight: 500;
   font-size: 28px;
   line-height: 1;
 }
 
-.footer-logo-wordmark .learn { color: var(--white-warm); }
-.footer-logo-wordmark .nest  { color: var(--green-leaf); }
+.footer-logo-wordmark .resource { color: var(--white-warm); }
+.footer-logo-wordmark .room     { color: var(--green-leaf); }
 
 .footer-tagline {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 10px;
   letter-spacing: 0.14em;
@@ -443,7 +430,7 @@ p {
 }
 
 .footer-location {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 14px;
   color: rgba(247, 244, 239, 0.7);
@@ -458,7 +445,7 @@ p {
 }
 
 .footer-contact a {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 14px;
   color: var(--green-leaf);
@@ -471,7 +458,7 @@ p {
 }
 
 .footer-contact-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.1em;
@@ -485,7 +472,7 @@ p {
   margin: 40px auto 0;
   padding-top: 24px;
   border-top: 1px solid rgba(221, 232, 229, 0.15);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 13px;
   color: rgba(247, 244, 239, 0.4);
@@ -553,7 +540,7 @@ p {
 }
 
 .hero-subline {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: var(--text-lg);
   color: var(--text-body);
@@ -635,7 +622,7 @@ p {
 }
 
 .col-item h4 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: var(--text-base);
   color: var(--teal-deep);
@@ -685,7 +672,7 @@ p {
 }
 
 .stage-card-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 12px;
   color: var(--green-leaf);
@@ -711,7 +698,7 @@ p {
 .stages-closing {
   text-align: center;
   font-style: italic;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: var(--text-lg);
   color: var(--text-muted);
@@ -788,7 +775,7 @@ p {
   align-items: center;
   justify-content: center;
   color: var(--teal-deep);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 13px;
   flex-shrink: 0;
 }
@@ -805,7 +792,7 @@ p {
 }
 
 .founder-name {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Lora', Georgia, serif;
   font-weight: 500;
   font-size: 22px;
   color: var(--white-warm);
@@ -813,7 +800,7 @@ p {
 }
 
 .founder-role {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 13px;
   color: rgba(247, 244, 239, 0.6);
@@ -945,7 +932,7 @@ p {
   align-items: center;
   justify-content: center;
   color: var(--teal-deep);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
 }
 
@@ -965,7 +952,7 @@ p {
 }
 
 .founder-bio .founder-role-tag {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 13px;
   letter-spacing: 0.08em;
@@ -1090,7 +1077,7 @@ p {
 }
 
 .stage-number {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Lora', Georgia, serif;
   font-weight: 600;
   font-size: 80px;
   color: #C8DFE0;
@@ -1099,7 +1086,7 @@ p {
 }
 
 .stage-block-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 12px;
   color: var(--green-leaf);
@@ -1130,7 +1117,7 @@ p {
 }
 
 .stage-meta-item h5 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.1em;
@@ -1178,7 +1165,7 @@ p {
 }
 
 .approach-item h4 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: var(--text-base);
   color: var(--teal-deep);
@@ -1271,7 +1258,7 @@ p {
 }
 
 .where-block h4 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.12em;
@@ -1372,7 +1359,7 @@ p {
 }
 
 .form-group label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 12px;
   color: var(--slate-deep);
@@ -1382,7 +1369,7 @@ p {
 
 .form-group input,
 .form-group textarea {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 16px; /* 16px minimum prevents iOS auto-zoom on focus */
   color: var(--text-body);
@@ -1429,7 +1416,7 @@ p {
 }
 
 .contact-method h4 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.1em;
@@ -1485,7 +1472,7 @@ p {
 }
 
 .step-number {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Lora', Georgia, serif;
   font-weight: 600;
   font-size: 64px;
   color: var(--teal-pale);
@@ -1494,7 +1481,7 @@ p {
 }
 
 .step-item h4 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 17px;
   color: var(--slate-deep);
@@ -1534,7 +1521,7 @@ p {
 }
 
 .reassurance-quote {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Lora', Georgia, serif;
   font-weight: 400;
   font-style: italic;
   font-size: 24px;
@@ -1726,7 +1713,7 @@ p {
    ============================================= */
 
 .hook-line {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Lora', Georgia, serif;
   font-weight: 500;
   font-size: 22px;
   color: var(--slate-deep);
@@ -1760,7 +1747,7 @@ p {
 }
 
 .stat-number {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Lora', Georgia, serif;
   font-weight: 500;
   font-size: 52px;
   color: var(--slate-deep);
@@ -1768,7 +1755,7 @@ p {
 }
 
 .stat-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 13px;
   color: var(--text-muted);
@@ -1832,7 +1819,7 @@ p {
   align-items: center;
   background: var(--teal-pale);
   color: var(--teal-deep);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 11px;
   padding: 4px 12px;
@@ -1844,7 +1831,7 @@ p {
 
 .stage-num-label {
   display: block;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 11px;
   color: var(--green-leaf);
@@ -1880,7 +1867,7 @@ p {
   display: inline-block;
   background: var(--teal-pale);
   color: var(--teal-deep);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 12px;
   padding: 4px 11px;
@@ -1897,7 +1884,7 @@ p {
 
 .who-for-label {
   display: block;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 11px;
   letter-spacing: 0.1em;
@@ -1917,7 +1904,7 @@ p {
 .stages-note {
   text-align: center;
   font-style: italic;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: var(--text-base);
   color: var(--text-muted);
@@ -1951,7 +1938,7 @@ p {
 }
 
 .approach-compact-item h4 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
   color: var(--slate-deep);
@@ -1994,7 +1981,7 @@ p {
   border-radius: 50%;
   background: var(--green-leaf);
   color: var(--white-pure);
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Lora', Georgia, serif;
   font-weight: 600;
   font-size: 18px;
   display: flex;
@@ -2023,7 +2010,7 @@ p {
 }
 
 .flow-body h4 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
   color: var(--slate-deep);
@@ -2059,7 +2046,7 @@ p {
    ============================================= */
 
 .founder-question {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Lora', Georgia, serif;
   font-weight: 400;
   font-style: italic;
   font-size: 18px;
@@ -2076,7 +2063,7 @@ p {
 
 .together-hook {
   text-align: center;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: rgba(247, 244, 239, 0.6);
@@ -2085,7 +2072,7 @@ p {
 
 .together-closing {
   text-align: center;
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Lora', Georgia, serif;
   font-weight: 400;
   font-style: italic;
   font-size: 22px;
@@ -2188,7 +2175,7 @@ p {
 
 .voice-heading {
   display: block;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 11px;
   letter-spacing: 0.18em;
@@ -2198,7 +2185,7 @@ p {
 }
 
 .voice-quote {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Lora', Georgia, serif;
   font-style: italic;
   font-weight: 400;
   font-size: 20px;
@@ -2217,7 +2204,7 @@ p {
 
 .voice-works-label {
   display: block;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 11px;
   letter-spacing: 0.1em;
@@ -2227,7 +2214,7 @@ p {
 }
 
 .voice-works-topics {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 13px;
   color: var(--text-muted);
@@ -2238,7 +2225,7 @@ p {
 .voices-closing {
   text-align: center;
   font-style: italic;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: var(--text-base);
   color: var(--text-muted);
@@ -2287,7 +2274,7 @@ p {
 }
 
 .program-number {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 11px;
   letter-spacing: 0.18em;
@@ -2303,7 +2290,7 @@ p {
 }
 
 .program-age-badge {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 13px;
   color: rgba(247, 244, 239, 0.65);
@@ -2340,7 +2327,7 @@ p {
 
 .program-col-label {
   display: block;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 11px;
   letter-spacing: 0.14em;
@@ -2360,7 +2347,7 @@ p {
 .program-card-footer {
   padding: 18px 40px;
   background: var(--teal-pale);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 13px;
   color: var(--teal-deep);
@@ -2374,7 +2361,7 @@ p {
 }
 
 .program-areas-list {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: var(--text-body);
@@ -2383,7 +2370,7 @@ p {
 }
 
 .program-areas-note {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 13px;
   color: var(--text-muted);
