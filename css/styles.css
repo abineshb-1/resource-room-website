@@ -246,8 +246,8 @@ p {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--white-warm);
-  border-bottom: 1px solid var(--border-light);
+  background: var(--slate-deep);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .nav-inner {
@@ -274,7 +274,7 @@ p {
   letter-spacing: -0.01em;
 }
 
-.nav-logo-wordmark .resource { color: var(--slate-deep); }
+.nav-logo-wordmark .resource { color: var(--white-warm); }
 .nav-logo-wordmark .room     { color: var(--green-leaf); }
 
 .nav-logo-tagline {
@@ -283,7 +283,7 @@ p {
   font-size: 9px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.45);
 }
 
 .nav-links {
@@ -297,14 +297,14 @@ p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 15px;
-  color: var(--slate-deep);
+  color: rgba(255,255,255,0.75);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--teal-deep);
+  color: var(--green-leaf);
 }
 
 .nav-right {
@@ -327,7 +327,7 @@ p {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--slate-deep);
+  background: var(--white-warm);
   transition: all 0.3s ease;
 }
 
