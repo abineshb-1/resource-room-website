@@ -274,7 +274,7 @@ p {
   letter-spacing: -0.01em;
 }
 
-.nav-logo-wordmark .resource { color: var(--white-warm); }
+.nav-logo-wordmark .resource { color: var(--slate-deep); }
 .nav-logo-wordmark .room     { color: var(--green-leaf); }
 
 .nav-logo-tagline {
