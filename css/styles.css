@@ -220,19 +220,21 @@ p {
 
 /* ---- Hero logo (SVG image) ---- */
 .hero-logo {
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
+  text-align: center;
 }
 
 .hero-logo-img {
   display: block;
-  width: 380px;
+  margin: 0 auto;
+  width: 400px;
   height: auto;
-  max-width: 90vw;
+  max-width: 88vw;
 }
 
 @media (max-width: 639px) {
   .hero-logo-img {
-    width: 280px;
+    width: 300px;
   }
   .hero-logo {
     margin-bottom: 32px;
@@ -286,7 +288,7 @@ p {
   font-size: 9px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255,255,255,0.72);
 }
 
 .nav-links {
