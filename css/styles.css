@@ -44,6 +44,7 @@ html {
 }
 
 body {
+  padding-top: 80px; /* fixed nav offset */
   background-color: var(--white-warm);
   color: var(--text-body);
   font-family: 'Inter', sans-serif;
@@ -243,8 +244,10 @@ p {
    ============================================= */
 
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   background: var(--slate-deep);
   border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -260,30 +263,15 @@ p {
 }
 
 .nav-logo {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+  display: block;
   text-decoration: none;
+  line-height: 0;
 }
 
-.nav-logo-wordmark {
-  font-family: 'Lora', Georgia, serif;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1;
-  letter-spacing: -0.01em;
-}
-
-.nav-logo-wordmark .resource { color: var(--white-warm); }
-.nav-logo-wordmark .room     { color: var(--green-leaf); }
-
-.nav-logo-tagline {
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  font-size: 9px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.45);
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -511,10 +499,10 @@ p {
    ============================================= */
 
 .hero {
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
-  padding: 120px 24px 80px;
+  padding: 80px 24px 80px;
   position: relative;
   overflow: hidden;
 }
@@ -1666,9 +1654,13 @@ p {
     padding: 14px 16px;
   }
 
-  /* Nav logo — slightly smaller on 375px */
-  .nav-logo-wordmark {
-    font-size: 28px;
+  /* Nav logo — slightly smaller on mobile */
+  .nav-logo-img {
+    height: 36px;
+  }
+
+  body {
+    padding-top: 68px;
   }
 
   /* Feeling section — scale down body text */
