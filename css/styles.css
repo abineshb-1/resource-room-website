@@ -1335,6 +1335,14 @@ p {
   min-height: 50vh;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-hero .hero-content {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 720px;
 }
 
 .contact-hero .hero-inner {
@@ -1349,6 +1357,8 @@ p {
 .contact-hero .hero-subline {
   font-size: var(--text-lg);
   max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* =============================================
@@ -1571,10 +1581,20 @@ p {
   min-height: 60vh;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero .container,
+.contact-hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .page-hero .hero-content {
   max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .page-hero h1 {
