@@ -543,7 +543,6 @@ p {
   padding: 80px 24px 80px;
   position: relative;
   overflow: hidden;
-  background: var(--linen);
 }
 
 .hero-inner {
