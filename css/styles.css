@@ -251,7 +251,6 @@ p {
   width: 400px;
   height: auto;
   max-width: 88vw;
-  mix-blend-mode: multiply;
 }
 
 @media (max-width: 639px) {
@@ -544,6 +543,7 @@ p {
   padding: 80px 24px 80px;
   position: relative;
   overflow: hidden;
+  background: var(--linen);
 }
 
 .hero-inner {
