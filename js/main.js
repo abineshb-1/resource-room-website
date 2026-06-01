@@ -55,34 +55,27 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  /* ---- Contact form → WhatsApp ---- */
+  /* ---- Contact form — validation + success message ---- */
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-
       const name    = (document.getElementById('name')?.value    || '').trim();
-      const age     = (document.getElementById('child-age')?.value || '').trim();
       const phone   = (document.getElementById('phone')?.value   || '').trim();
       const message = (document.getElementById('message')?.value || '').trim();
 
       if (!name && !phone && !message) {
+        e.preventDefault();
         alert('Please fill in at least your name and a message before sending.');
-        return;
       }
-
-      const lines = [
-        'New enquiry from the Learnnest website',
-        '',
-        name    ? 'Name: '           + name    : null,
-        age     ? "Child's age: "    + age     : null,
-        phone   ? 'Contact number: ' + phone   : null,
-        message ? '\nMessage:\n'     + message : null,
-      ].filter(Boolean).join('\n');
-
-      const waURL = 'https://wa.me/919900085179?text=' + encodeURIComponent(lines);
-      window.open(waURL, '_blank');
     });
+  }
+
+  /* Show success message after redirect back from formsubmit.co */
+  if (window.location.search.includes('sent=1')) {
+    const form = document.getElementById('contact-form');
+    const success = document.getElementById('form-success');
+    if (form) form.style.display = 'none';
+    if (success) success.style.display = 'block';
   }
 
 });

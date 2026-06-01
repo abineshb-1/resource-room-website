@@ -1455,6 +1455,19 @@ p {
   line-height: 1.7;
 }
 
+.form-success-msg {
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: var(--text-lg);
+  color: var(--teal-deep);
+  line-height: 1.8;
+  padding: 32px;
+  background: var(--teal-pale);
+  border-left: 4px solid var(--teal-deep);
+  border-radius: 4px;
+}
+
 @media (min-width: 1024px) {
   .contact-main {
     grid-template-columns: 1fr 1fr;
