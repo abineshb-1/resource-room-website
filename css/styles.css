@@ -221,13 +221,13 @@ p {
 /* ---- Nav logo (SVG image) ---- */
 .nav-logo-img {
   display: block;
-  height: 85px;
+  height: 119px;
   width: auto;
 }
 
 @media (max-width: 639px) {
   .nav-logo-img {
-    height: 68px;
+    height: 95px;
   }
 }
 
