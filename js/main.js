@@ -70,12 +70,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* Show success message after redirect back from formsubmit.co */
+  /* Show success message after redirect back from Web3Forms */
   if (window.location.search.includes('sent=1')) {
     const form = document.getElementById('contact-form');
     const success = document.getElementById('form-success');
     if (form) form.style.display = 'none';
     if (success) success.style.display = 'block';
+    history.replaceState(null, '', window.location.pathname);
   }
 
 });
