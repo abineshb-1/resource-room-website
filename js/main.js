@@ -66,6 +66,12 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!name && !phone && !message) {
         e.preventDefault();
         alert('Please fill in at least your name and a message before sending.');
+        return;
+      }
+
+      const subjectInput = contactForm.querySelector('input[name="subject"]');
+      if (subjectInput && name) {
+        subjectInput.value = 'New enquiry from ' + name + ' — Resource Room';
       }
     });
   }
